@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fish Weight Prediction</title>
+</head>
+<body>
+    <h1>Enter Fish Measurements and Species</h1>
+    <form action="/predict" method="post">
+        <label for="Species">Species:</label>
+        <select name="Species" id="Species" required>
+            <option value="Bream">Bream</option>
+            <option value="Roach">Roach</option>
+            <option value="Whitefish">Whitefish</option>
+            <option value="Parkki">Parkki</option>
+            <option value="Perch">Perch</option>
+            <option value="Pike">Pike</option>
+            <option value="Smelt">Smelt</option>
+            <!-- Add other species as needed -->
+        </select><br><br>
+        
+        <label for="Length1">Length1:</label>
+        <input type="number" name="Length1" placeholder="Length1" required><br><br>
+        <label for="Length2">Length2:</label>
+        <input type="number" name="Length2" placeholder="Length2" required><br><br>
+        <label for="Length3">Length3:</label>
+        <input type="number" name="Length3" placeholder="Length3" required><br><br>
+        <label for="Height">Height:</label>
+        <input type="number" name="Height" placeholder="Height" required><br><br>
+        <label for="Width">Width:</label>
+        <input type="number" name="Width" placeholder="Width" required><br><br>
+        
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>
